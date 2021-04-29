@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a href="./index.html" class="nav-brand m-2">    
+                    Logo
+                </a>
+                
+                <div class="">
+                    <ul class="navbar-nav d-flex flex-row flex-wrap">
+                        <li class="nav-item m-2">
+                            <a href="./informacion.html" class="nav-link">Información</a>
+                        </li>
+                        <li class="nav-item m-2">
+                            <a href="./grupo.html" class="nav-link">Grupo</a>
+                        </li>
+                        <li class="nav-item m-2">
+                            <a href="./contacto.html" class="nav-link active">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+      </header>
+
+      <main>
+          <div class="form-container">
+              <form action="POST" class="purchase-form" netlify>
+                
+                <h1 class="purchase-form__title mb-5">¿Desea comprar entradas al festival?</h1>
+
+                <div class="row">
+
+                    <div class="form-group col">
+                        <label for="concierto">Seleccione cual es el ticket que quiere comprar</label>
+                        <select name="concierto" id="concierto" class="form-select">
+                            <option value="a">Ticket de Festival Lorem normal - (22/10/21)</option>
+                            <option value="b">Ticket de Festival Lorem especial - (22/10/21)</option>
+                            <option value="c">Ticket de Festival Lorem VIP - (22/10/21)</option>
+                        </select>  
+                      </div>
+                    
+                    <div class="form-group col">
+                        <label for="cantidad">Nº Entradas</label>
+                        <select name="cantidad" id="cantidad" class="form-select" aria-describedby="maxEntries">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                        <small id="maxEntries" class="form-text text-muted">El número máximo de entradas a comprar es de 3.</small>  
+                      </div>
+                    
+                </div>
+                  
+                  <div class="row mt-3">
+                    <div class="col">
+                        <label for="nombre">Nombre: </label>
+                        <input class="form-control" type="text"  id="nombre" placeholder="Nombre completo" required>  
+                      </div>
+                      
+                    <div class="col">
+                        <label for="apellidos">Apellidos: </label>
+                        <input class="form-control" type="text"  id="apellidos" placeholder="Apellido1 Apellido2" required>  
+                    </div>
+                  </div>
+                  
+                  <div class="row mt-3">
+                    <div class="form-group col-auto">
+                        <label for="pref">Prefijo telefónico: </label>
+                        <select name="pref" id="pref" class="form-select">
+                            <option value="34">+34</option>
+                            <option value="355">+355</option>
+                            <option value="1">+1</option>
+                            <option value="55">+54</option>
+                            <option value="375">+375</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group col">
+                        <label for="phone">Indique su número de teléfono</label>
+                        <input class="form-control" type="text"  id="phone" maxlength="6" required>  
+                      </div>    
+                  </div>
+                  
+                  <div class="form-group mt-3">
+                    <label for="email">Indique su correo electrónico</label>
+                    <input class="form-control" type="email"  id="email" placeholder="example@hotmail.com" required>  
+                  </div>
+                  
+                  <div class="form-group mt-3">
+                    
+                    <legend>
+                        Datos de pago
+                    </legend>
+                    
+                    
+
+                    <label for="">Indique el tipo de tarjeta que va a utilizar: </label>
+                    <div class="purchase-form__payment">
+                        
+                        <div class="form-check m-2">
+                            <input class="form-check-input test" type="radio" name="payment" id="credit-card" value="a" checked>
+                            <label class="form-check-label" for="credit-card">Mastercard</label>    
+                        </div>
+
+                        <div class="form-check m-2">
+                            <input class="form-check-input test" type="radio" name="payment" id="paypal" value="b">
+                            <label class="form-check-label" for="paypal">Visa</label>
+                        </div>
+                        
+                        <div class="form-check m-2">
+                            <input class="form-check-input" type="radio" name="payment" id="other" value="c">
+                            <label class="form-check-label" for="other">Loremcard</label>
+                        </div>
+                    </div>  
+
+                    <div class="row">
+                        
+                        <div class="form-group col">
+                            <label for="nt">Número de tarjeta</label>
+                            <input class="form-control" type="text" name="nt" id="nt" placeholder="XXXX XXXX XXXX XXXX" maxlength="16" required>
+                        </div>
+      
+                        <div class="form-group col">
+                            <label for="tt">Titular de la tarjeta</label>
+                            <input class="form-control" type="text" name="tt" id="tt" placeholder="Nombre Apellido1 Apellido2" required>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="form-group col">
+                            <label for="fc">Fecha de caducidad</label>
+                            <input class="form-control" type="date" name="fc" id="fc" required>
+                        </div>
+      
+                        <div class="form-group col">
+                            <label for="cvv">
+                              <a href="#" data-toggle="popover">
+                                CVV / CVC*
+                              </a>
+                              </label>
+                            <input class="form-control" type="text" name="cvv" id="cvv" maxlength="3" placeholder="XXX" required>
+                        </div>    
+                    </div>
+                    
+                  </div>
+
+                  <div class="form-group m-3">                    
+                    <input class="form-check-input" type="checkbox" name="terms" id="terms" required>  
+                    <label class="form-check-label" for="terms">He leido y acepto los <a href="#">términos y condiciones de compra</a>.</label>
+                  </div>
+                  
+                  <button class="btn btn-primary" type="submit">Comprar</button>
+              </form>
+          </div>
+      </main>
+
+      
+      <footer class="footer">
+        <ul class="footer__contact">
+          <li><a href="#"><i class="fab fa-twitter-square"></i> Twitter</a></li>
+        </ul>
+      </footer>
+
+      <script src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+      
+</body>
+</html>
