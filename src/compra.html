@@ -16,16 +16,15 @@
                 <a href="./index.html" class="nav-brand m-2 logo">    
                     Logo
                 </a>
-                
                 <div class="">
                     <ul class="navbar-nav d-flex flex-row flex-wrap">
-                        <li class="nav-item m-2">
+                        <li class="nav-item m-3">
                             <a href="./informacion.html" class="nav-link">¿Quienes somos?</a>
                         </li>
-                        <li class="nav-item m-2">
+                        <li class="nav-item m-3">
                             <a href="./grupo.html" class="nav-link">Miembros de la banda</a>
                         </li>
-                        <li class="nav-item m-2">
+                        <li class="nav-item m-3">
                             <a href="./compra.html" class="nav-link active">Comprar ticket</a>
                         </li>
                     </ul>
@@ -34,15 +33,16 @@
         </nav>
       </header>
 
+
+
+
+      
       <div class="content">
         <main>
             <div class="form-container">
                 <form action="POST" class="purchase-form" netlify>
-                  
                   <h1 class="purchase-form__title mb-5">¿Desea comprar entradas al festival?</h1>
-  
                   <div class="row">
-  
                       <div class="form-group col">
                           <label for="concierto">Seleccione cual es el ticket que quiere comprar</label>
                           <select name="concierto" id="concierto" class="form-select">
@@ -61,7 +61,6 @@
                           </select>
                           <small id="maxEntries" class="form-text text-muted">El número máximo de entradas a comprar es de 3.</small>  
                         </div>
-                      
                   </div>
                     
                     <div class="row mt-3">
@@ -69,7 +68,7 @@
                           <label for="nombre">Nombre: </label>
                           <input class="form-control" type="text"  id="nombre" placeholder="Nombre completo" required>  
                         </div>
-                        
+
                       <div class="col">
                           <label for="apellidos">Apellidos: </label>
                           <input class="form-control" type="text"  id="apellidos" placeholder="Apellido1 Apellido2" required>  
@@ -101,60 +100,57 @@
                     
                     <div class="form-group mt-3">
                       
-                      <legend>
-                          Datos de pago
-                      </legend>
-                      
-                      
-  
-                      <label for="">Indique el tipo de tarjeta que va a utilizar: </label>
-                      <div class="purchase-form__payment">
-                          
-                          <div class="form-check m-2">
-                              <input class="form-check-input test" type="radio" name="payment" id="credit-card" value="a" checked>
-                              <label class="form-check-label" for="credit-card">Mastercard</label>    
-                          </div>
-  
-                          <div class="form-check m-2">
-                              <input class="form-check-input test" type="radio" name="payment" id="paypal" value="b">
-                              <label class="form-check-label" for="paypal">Visa</label>
-                          </div>
-                          
-                          <div class="form-check m-2">
-                              <input class="form-check-input" type="radio" name="payment" id="other" value="c">
-                              <label class="form-check-label" for="other">Loremcard</label>
-                          </div>
-                      </div>  
-  
-                      <div class="row">
-                          
-                          <div class="form-group col">
-                              <label for="nt">Número de tarjeta</label>
-                              <input class="form-control" type="text" name="nt" id="nt" placeholder="XXXX XXXX XXXX XXXX" minlength="16" maxlength="16" required>
-                          </div>
+                        <fieldset>
+                            <legend>
+                                Datos de pago
+                            </legend>
+                                  
+                            <p>Indique el tipo de tarjeta que va a utilizar: </p>
+                            <div class="purchase-form__payment">
+                                <div class="form-check m-2">
+                                    <input class="form-check-input test" type="radio" name="payment" id="credit-card" value="a" checked>
+                                    <label class="form-check-label" for="credit-card">Mastercard</label>    
+                                </div>
         
-                          <div class="form-group col">
-                              <label for="tt">Titular de la tarjeta</label>
-                              <input class="form-control" type="text" name="tt" id="tt" placeholder="Nombre Apellido1 Apellido2" required>
-                          </div>
-                      </div>
-                      
-                      <div class="row">
-                          <div class="form-group col">
-                              <label for="fc">Fecha de caducidad</label>
-                              <input class="form-control" type="date" name="fc" id="fc" required>
-                          </div>
+                                <div class="form-check m-2">
+                                    <input class="form-check-input test" type="radio" name="payment" id="paypal" value="b">
+                                    <label class="form-check-label" for="paypal">Visa</label>
+                                </div>
+                                
+                                <div class="form-check m-2">
+                                    <input class="form-check-input" type="radio" name="payment" id="other" value="c">
+                                    <label class="form-check-label" for="other">Loremcard</label>
+                                </div>
+                            </div>  
         
-                          <div class="form-group col">
-                              <label for="cvv">
-                                <a href="#" data-toggle="popover">
-                                  CVV / CVC*
-                                </a>
-                                </label>
-                              <input class="form-control" type="text" name="cvv" id="cvv" minlength="3" maxlength="3" placeholder="XXX" required>
-                          </div>    
-                      </div>
-                      
+                            <div class="row">
+                                <div class="form-group col">
+                                    <label for="nt">Número de tarjeta</label>
+                                    <input class="form-control" type="text" name="nt" id="nt" placeholder="XXXX XXXX XXXX XXXX" minlength="16" maxlength="16" required>
+                                </div>
+              
+                                <div class="form-group col">
+                                    <label for="tt">Titular de la tarjeta</label>
+                                    <input class="form-control" type="text" name="tt" id="tt" placeholder="Nombre Apellido1 Apellido2" required>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="form-group col">
+                                    <label for="fc">Fecha de caducidad</label>
+                                    <input class="form-control" type="date" name="fc" id="fc" required>
+                                </div>
+              
+                                <div class="form-group col">
+                                    <label for="cvv">
+                                      <a href="#" data-toggle="popover">
+                                        CVV / CVC*
+                                      </a>
+                                      </label>
+                                    <input class="form-control" type="text" name="cvv" id="cvv" minlength="3" maxlength="3" placeholder="XXX" required>
+                                </div>    
+                            </div>
+                        </fieldset>
                     </div>
   
                     <div class="form-group m-3">                    
@@ -169,7 +165,9 @@
       </div>
 
 
-      
+
+
+
       <footer class="footer">
         <ul class="footer__contact">
           <li><a href="#">Twitter</a></li>

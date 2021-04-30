@@ -1,4 +1,6 @@
-/*INFORMACION*/
+/* 
+#INFORMACION
+ */
 
 .top-image {
   background-image: url("../images/concierto4.jpg");
@@ -80,7 +82,6 @@
 .reasons__item {
   margin: 1.5rem;
   display: flex;
-  //flex-wrap: wrap;
   counter-increment: item;
   list-style: none inside;
 
@@ -88,7 +89,6 @@
     content: counter(item);
     margin-right: 20px;
     margin-bottom: 10px;
-    //width: 35px;
     min-width: 35px;
     height: 35px;
     display: inline-flex;
@@ -112,23 +112,23 @@
 
   margin: 3.5rem 0;
 
-  h3 {
-    flex: 1;
-    font-size: 1.5rem;
-  }
-
-  h4 {
-    flex: 2;
-    font-size: (1.5rem/1.2);
-    font-weight: 400;
-
-    @media screen and (min-width: 40rem) {
-      margin-left: 3rem;
-    }
-  }
-
   @media screen and (max-width: 40rem) {
     flex-direction: column;
+  }
+}
+
+.message__left {
+  flex: 1;
+  font-size: 1.5rem;
+}
+
+.message__right {
+  flex: 2;
+  font-size: (1.5rem/1.2);
+  font-weight: 400;
+
+  @media screen and (min-width: 40rem) {
+    margin-left: 3rem;
   }
 }
 
