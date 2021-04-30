@@ -1,0 +1,52 @@
+/*GROUP MEMBERS*/
+
+.band-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  max-width: 350px;
+}
+
+/*SOCIAL MEDIA*/
+
+.social-media {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.fab {
+  text-decoration: none;
+  padding: 10px;
+  font-size: 30px;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+.fa-facebook-square {
+  color: #3b5998;
+
+  &:hover {
+    color: #3b5998;
+  }
+}
+
+.fa-twitter-square {
+  color: #1da1f2;
+
+  &:hover {
+    color: #1da1f2;
+  }
+}
+
+.fa-instagram-square {
+  color: #c13584;
+
+  &:hover {
+    color: #c13584;
+  }
+}

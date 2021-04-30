@@ -5,11 +5,16 @@ body {
 }
 
 .content {
-  margin: 2rem 5rem;
+  margin: 5rem;
 
   @media screen and (max-width: 50rem) {
     margin: 1rem;
   }
+}
+
+.content__title {
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
 /*HEADER*/
@@ -17,6 +22,7 @@ body {
 .logo {
   text-decoration: none;
   color: white;
+  font-size: 2rem;
 
   &:hover {
     color: white;
@@ -146,215 +152,5 @@ body {
       grid-row: auto;
       margin: 1rem;
     }
-  }
-}
-
-/*INFORMACION*/
-
-.top-image {
-  background-image: url("../images/concierto4.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-align: center;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  height: 40rem;
-
-  @media screen and (max-width: 40rem) {
-    height: 25rem;
-    color: $light-gray;
-  }
-}
-
-.top-image__title {
-  font-size: 4.5rem;
-}
-
-.top-image__author {
-  margin-top: 2rem;
-  font-size: 2.5rem;
-}
-
-.main-img {
-  max-width: 75%;
-}
-
-.concert-img {
-  max-width: 65%;
-
-  @media screen and (max-width: 50rem) {
-    max-width: 100%;
-  }
-}
-
-.carousel-container {
-  display: flex;
-  justify-content: center;
-}
-
-.article {
-  margin: 3% 15rem;
-
-  @media screen and (max-width: 80rem) {
-    margin: 3% 0;
-  }
-}
-
-.article__content {
-  margin: 2.5rem 0;
-}
-
-.reasons {
-  margin: 3.5rem 0;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.reasons__list {
-  counter-reset: item;
-}
-
-.reasons__item {
-  margin: 1.5rem;
-  display: flex;
-  flex-wrap: wrap;
-  counter-increment: item;
-  list-style: none inside;
-
-  &:before {
-    content: counter(item);
-    margin-right: 20px;
-    margin-bottom: 10px;
-    width: 35px;
-    height: 35px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 16px;
-    background-color: $dark;
-    border-radius: 50%;
-    color: #fff;
-  }
-}
-
-.reasons__title {
-  font-size: 1.1rem;
-  font-weight: 600;
-}
-
-.message {
-  display: flex;
-  justify-content: space-between;
-
-  margin: 3.5rem 0;
-
-  h3 {
-    flex: 1;
-    font-size: 1.5rem;
-  }
-
-  h4 {
-    margin-left: 3rem;
-    flex: 2;
-    font-size: (1.5rem/1.2);
-    font-weight: 400;
-  }
-
-  @media screen and (max-width: 40rem) {
-    flex-direction: column;
-  }
-}
-
-.review {
-  text-align: right;
-}
-
-.review__content {
-  font-size: 1.25rem;
-}
-
-.review__footer {
-  color: gray;
-  margin-top: -1rem;
-  font-size: 0.9rem;
-}
-
-@media screen and (min-width: 40rem) {
-  .review {
-    margin: 3rem 10rem;
-  }
-}
-
-/*GROUP MEMBERS*/
-
-.band-members {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.card {
-  max-width: 350px;
-}
-/*SOCIAL MEDIA*/
-
-.social-media {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-
-  .fab {
-    text-decoration: none;
-    padding: 10px;
-    font-size: 30px;
-
-    &:hover {
-      opacity: 0.7;
-    }
-  }
-}
-
-.fa-facebook-square {
-  color: #3b5998;
-}
-
-.fa-twitter-square {
-  color: #1da1f2;
-}
-
-.fa-instagram-square {
-  color: #c13584;
-}
-
-/*COMPRAR ENTRADA*/
-
-.form-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  @media screen and (min-width: 40rem) {
-    margin: 5rem 0;
-  }
-}
-
-.purchase-form {
-  max-width: 700px;
-}
-
-.form-check {
-  display: inline-block;
-}
-
-@media screen and (max-width: 40rem) {
-  .row {
-    flex-direction: column;
   }
 }
