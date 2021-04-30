@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
     <title>UOC Boilerplate</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
-    <h1 class="uoc-title">Hello, UOC!</h1>
     <header>
       <nav class="navbar navbar-dark bg-dark">
           <div class="container-fluid">
-              <a href="./index.html" class="nav-brand m-2">    
+              <a href="./index.html" class="nav-brand m-2 logo">    
                   Logo
               </a>
               
@@ -22,7 +22,7 @@
                           <a href="./informacion.html" class="nav-link">Información</a>
                       </li>
                       <li class="nav-item m-2">
-                          <a href="./grupo.html" class="nav-link active">Grupo</a>
+                          <a href="./grupo.html" class="nav-link">Grupo</a>
                       </li>
                       <li class="nav-item m-2">
                           <a href="./contacto.html" class="nav-link">Contacto</a>
@@ -32,6 +32,35 @@
           </div>
       </nav>
   </header>
+  
+  <main>
+    <div class="main-page">
+        <ul class="grid-box">
+            <li class="grid-box__box item1">
+                <h1 class="grid-box__title">Lorem ipsum Group Festival</h1>
+            </li>
+            <li class="grid-box__box item2">
+                <h2>¿Por qué deberías venir?</h2>
+            </li>
+            <li class="grid-box__box item3">
+                <h3>Compra de tickets disponible para ir a verlos en directo!</h3>
+                <a class="grid-box__link" href="./contacto.html">Click Here!</a>
+            </li>
+            <li class="grid-box__box item4">
+                <h4>Quienes son Lorem ipsun Group?</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni autem perferendis unde distinctio corporis? Adipisci illum rerum culpa est officia! Fugit hic itaque nemo accusamus soluta, quae vitae cum animi.</p>
+            </li>
+        </ul>
+      </div>
+  </main>
+      
+  <footer class="footer">
+    <ul class="footer__contact">
+      <li><a href="#">Twitter</a></li>
+      <li><a href="#">Instagram</a></li>
+      <li><a href="#">Facebook</a></li>
+    </ul>
+  </footer>
     <script src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
   </body>
 </html>
