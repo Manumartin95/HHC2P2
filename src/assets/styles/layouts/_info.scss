@@ -97,7 +97,7 @@
     font-size: 16px;
     background-color: $dark;
     border-radius: 50%;
-    color: #fff;
+    color: $white;
   }
 }
 
@@ -141,7 +141,7 @@
 }
 
 .review__footer {
-  color: gray;
+  color: $gray;
   margin-top: -1rem;
   font-size: 0.9rem;
 }
